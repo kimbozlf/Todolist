@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+body {
+  background-image: url(../image/photo-1506318137071-a8e063b4bec0.avif);
+  background-size: cover;
+  background-position: center;
+}
+h1 {
+  padding: 15px;
+  color: white;
+  text-shadow: 0 0 30px white;
+}
+div.add-item {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  margin: 15px;
+  column-gap: 20px;
+  > input {
+    width: 90%;
+    padding: 10px 15px;
+    border-radius: 15px;
+    border: 2px solid white;
+    box-shadow: 0 0 7px white;
+    outline: none;
+    color: white;
+    outline-offset: 3px;
+    background: none;
+  }
+  > button {
+    padding: 5px 13px;
+    border-radius: 15px;
+    border: 2px solid white;
+    font-size: 25px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 7px white;
+    color: white;
+    background: none;
+    cursor: pointer;
+  }
+}
+div.items {
+  width: 98%;
+  padding: 10px 0;
+  border-radius: 13px;
+  margin: 0 auto;
+  display: flex;
+  row-gap: 10px;
+}
+ul {
+  width: 100%;
+  text-align: left;
+  margin-top: 20px;
+}
+li {
+  list-style: none;
+  padding: 10px 20px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.604);
+  text-transform: capitalize;
+  font-weight: 600;
+  border: 2px solid white;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 300ms linear;
+  > p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+}
+
+.buttons {
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+}
+.closebtn {
+  font-weight: normal;
+  background: none;
+  border: 2px solid rgb(254, 62, 62);
+  float: right;
+  color: white;
+  font-weight: 800;
+  padding: 5px 10px;
+  border-radius: 12px;
+}
+.donebtn {
+  font-weight: normal;
+  background: none;
+  border: 2px solid rgb(3, 218, 3);
+  float: right;
+  color: white;
+  font-weight: 800;
+  padding: 5px 10px;
+  border-radius: 12px;
+}
+.done {
+  box-shadow: 0 0 10px rgb(3, 218, 3);
+  border-color: rgb(3, 218, 3);
+}
+@media (max-width: 576px) {
+  div.add-item {
+    width: 100%;
+    margin: 0;
+    padding: 0 10px;
+  }
+}
+@media (max-width: 576px) {
+  h1 {
+    text-align: center;
+  }
+}
